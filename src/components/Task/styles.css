@@ -1,0 +1,47 @@
+.taskContainer {
+    width: 90%;
+    display: flex;
+    padding: 10px;
+    color: white;
+    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.title {
+    color: #282C34;
+    display: inline;
+    margin-left: 20px;
+}
+
+.text {
+    color: #282c34;
+    display: inline;
+}
+
+.taskImage {
+    height: 40px;
+    width: 40px;
+}
+
+.actionsDiv {
+    margin-left: auto;
+}
+
+.actionImage {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.actionImage:hover {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+}
