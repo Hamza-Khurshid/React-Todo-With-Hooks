@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import AddTask from './components/AddTask';
 import EditTask from './components/EditTask';
+import FetchData from './components/FetchData';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,6 +17,9 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
+          <Route path="/fetch">
+            <FetchData />
+          </Route>
           <Route path="/add">
             <AddTask />
           </Route>

@@ -1,7 +1,9 @@
 import { 
     ADD_TASK,
     EDIT_TASK,
-    DELETE_TASK
+    DELETE_TASK,
+    FETCH_DATA,
+    FETCH_DATA_ERR
 } from '../actions/Task';
 
 const initState = {
@@ -41,7 +43,8 @@ const initState = {
             title: 'It’s a good idea to get rich by selling you how to get rich.',
             description: 'May 12, 2019 - history objects typically have the following properties and methods: length - (number) The number of entries in the history stack.'
         }
-    ]
+    ],
+    posts: []
 }
 
 export default (state = initState, action) => {
@@ -79,6 +82,19 @@ export default (state = initState, action) => {
             return {
                 ...state,
                 tasks
+            }
+        }
+
+        case FETCH_DATA:{
+            return {
+                ...state,
+                posts: action.payload
+            }
+        }
+
+        case FETCH_DATA_ERR:{
+            return {
+                ...state,
             }
         }
     
